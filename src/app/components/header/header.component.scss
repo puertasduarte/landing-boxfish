@@ -5,6 +5,10 @@
     height: 84px;
     padding: 17px 44px;
     border-bottom: 1px solid #E5E5E5;
+
+    @media only screen and (max-width: 991px) {
+        padding: 22px 20px;
+    }
 }
 
 .header-subcontainer {
@@ -26,9 +30,36 @@
             line-height: 15px;
             letter-spacing: 0em;
             text-align: left;
+            margin-right: 21.6px;
             
-            &:not(:last-child) {
-                margin-right: 21.6px;
+            &:last-child {
+                margin-right: 0;
+            }
+
+            
+            @media only screen and (max-width: 991px) {
+                display: none;
+            }
+        }
+
+        &--mobile {
+            display: none;
+            height: 30px;
+            border-bottom: 1px solid #E5E5E5;
+
+            img {
+                width: auto;
+                margin: 0 16px;
+            }
+
+            @media only screen and (max-width: 991px) {
+                display: flex;
+                justify-content: center;
+
+                a {
+                    display: flex;
+                    margin-right: 0;
+                }
             }
         }
     }
@@ -48,6 +79,10 @@
             &:not(:last-child) {
                 margin-right: 43px;
             }
+        }
+        
+        @media only screen and (max-width: 991px) {
+            display: none;
         }
     }
 }
