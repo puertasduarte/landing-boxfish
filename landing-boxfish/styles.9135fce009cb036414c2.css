@@ -1,0 +1,1 @@
+:root{--appBackgroundColor:#fff;--headerBorderColor:#e5e5e5;--titleFontColor:#333;--subtitleFontColor:#999;--toogleFontColor:#999}@font-face{font-family:Inter;src:url(Inter-Regular.9cd7588f47651215d52f.ttf)}*{box-sizing:border-box;font-family:Inter}body{background-color:var(--appBackgroundColor)}body,p{margin:0}
