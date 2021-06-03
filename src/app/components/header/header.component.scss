@@ -1,0 +1,120 @@
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 84px;
+    padding: 17px 44px;
+    border-bottom: 1px solid var(--headerBorderColor);
+
+    @media only screen and (max-width: 991px) {
+        padding: 22px 20px;
+    }
+
+    &__menu {
+        color: #4081FF;
+
+        a {
+            cursor: pointer;
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 17px;
+            letter-spacing: 0em;
+            text-align: left;
+
+            &:not(:last-child) {
+                margin-right: 43px;
+            }
+        }
+        
+        @media only screen and (max-width: 991px) {
+            display: none;
+        }
+    }
+
+    &__mobile-menu {
+        display: none;
+
+        button {
+            display: flex;
+            align-items: center;
+            background: none;
+            border: none;
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 17px;
+            color: #4081FF;
+
+            img {
+                margin-right: 10px;
+
+                &:not(:last-child) {
+                    margin-bottom: 3px;
+                }
+            }
+        }
+
+        @media only screen and (max-width: 991px) {
+            display: flex;
+        }
+    }
+
+    &__mobile-menu-fake-icon {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    &__left-box {
+        display: flex;
+        align-items: center;
+
+        img {
+            margin-right: 48px;
+            width: 105px;
+        }
+
+        a {
+            color: #4081FF;
+            text-decoration: none;
+            font-size: 12px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 15px;
+            letter-spacing: 0em;
+            text-align: left;
+            margin-right: 21.6px;
+            
+            &:last-child {
+                margin-right: 0;
+            }
+
+            
+            @media only screen and (max-width: 991px) {
+                display: none;
+            }
+        }
+
+        &--mobile {
+            display: none;
+            height: 30px;
+            border-bottom: 1px solid var(--headerBorderColor);
+
+            img {
+                width: auto;
+                margin: 0 16px;
+            }
+
+            @media only screen and (max-width: 991px) {
+                display: flex;
+                justify-content: center;
+
+                a {
+                    display: flex;
+                    margin-right: 0;
+                }
+            }
+        }
+    }
+}

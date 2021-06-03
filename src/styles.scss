@@ -1,0 +1,26 @@
+:root {
+    --appBackgroundColor: #FFFFFF;
+    --headerBorderColor: #E5E5E5;
+    --titleFontColor: #333333;
+    --subtitleFontColor: #999999;
+    --toogleFontColor: #999999;
+}
+
+@font-face {
+    font-family: Inter;
+    src: url(assets/fonts/Inter-Regular.ttf);
+}
+
+* {
+    box-sizing: border-box;
+    font-family: Inter;
+}
+
+body {
+    margin: 0;
+    background-color: var(--appBackgroundColor);
+}
+
+p {
+    margin: 0;
+}
