@@ -1,7 +1,23 @@
 .toogle-container {
   position: fixed;
-  right: 100px;
+  left: 100px;
   bottom: 200px;
+  display: flex;
+  align-items: center;
+  background-color: var(--titleFontColor);
+  padding: 5px 10px;
+  border-radius: 15px;
+  min-width: 251px;
+
+  @media only screen and (max-width: 768px) {
+    right: 20px;
+    left: unset;
+  }
+
+  &__message {
+    margin-right: 10px;
+    color: var(--toogleFontColor);
+  }
 
   // CSS code from https://www.w3schools.com/howto/howto_css_switch.asp
   /* The switch - the box around the slider */
